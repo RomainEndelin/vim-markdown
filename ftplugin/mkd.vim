@@ -311,8 +311,8 @@ function! s:Markdown_Toc(...)
     if l:window_type ==# 'horizontal'
         lopen
     elseif l:window_type ==# 'vertical'
-        vertical lopen
-        let &winwidth=(&columns/2)
+        topleft vertical lopen
+        let &winwidth=(&columns/3)
     elseif l:window_type ==# 'tab'
         tab lopen
     else
